@@ -12,34 +12,31 @@ let colors_name="monokai-acorns"
 
 " Below are the colours used for this colourscheme with their fullname
 "
-" Air Force Blue   GUI: #5F87AF, Term:  240
+" Grey35           GUI: #585858, Term:  240
 " Bakers Chocolate GUI: #420E09, Term:  52
 " Biscay           GUI: #334455, Term:  59
 " Black            GUI: #111111, Term: 233
 " Black0           GUI: #000000, Term:  00
 " Bokara Grey      GUI: #211F1C, Term:  00
 " Carmine          GUI: #960020, Term:  88
-" Dark Tangerine   GUI: #FD971F, Term: 47
 " DEBUG            GUI: #FF00FF, Term:  13
 " DEBUG2           GUI: #FF0000, Term:  09
-" Deep Pink        GUI: #F92782, Term: 47
+" SpringGreen2     GUI: #00ff5f, Term:  47
 " Eternity         GUI: #2F312B, Term:  22
 " Flint            GUI: #75715E, Term:  95
 " Heavy Metal      GUI: #49483E, Term:  59
 " Jumbo            GUI: #8F908A, Term: 102
-" Las Palmas       GUI: #A6E22E, Term: 99
+" SlateBlue1       GUI: #875fff, Term:  99
 " Light Slate Blue GUI: #AE81FF, Term: 141
 " Light Slate Grey GUI: #778899, Term: 103
 " Maire            GUI: #222218, Term:  00
 " Midnight         GUI: #223344, Term:  23
 " Palm Leaf        GUI: #253B22, Term:  22
 " Peach Orange     GUI: #9D550F, Term: 130
-" Radical Red      GUI: #F922402, Term: 47
 " Seal Brown       GUI: #3C1518, Term:  52
 " Spellbad         GUI: #F8F8F2, Term:  15
-" Spelllocal       GUI: #66D9EF, Term:  81
-" Turquoise Blue   GUI: #\nu66D9EF, Term:  81
-" Vulcan           GUI: #383A3EA3E, Term: 236
+" Turquoise Blue   GUI: #66D9EF, Term:  81
+" Vulcan           GUI: #383A3E, Term: 236
 " White            GUI: #F8F8F2, Term:  15
 " White Smoke      GUI: #F8F8F8, Term:  15
 " Wild Rice        GUI: #E6DB74, Term: 185
@@ -70,8 +67,8 @@ hi SignColumn guifg=NONE guibg=#211F1C gui=NONE ctermfg=NONE ctermbg=00 cterm=NO
 hi Question guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 hi ModeMsg guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-hi ErrorMsg guifg=#111111 guibg=#F922402 gui=NONE ctermfg=233 ctermbg=47 cterm=NONE
-hi WarningMsg guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+hi ErrorMsg guifg=#111111 guibg=#00ff5f gui=NONE ctermfg=233 ctermbg=47 cterm=NONE
+hi WarningMsg guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
 
 " Spelling
 " --------------------------
@@ -93,7 +90,7 @@ hi Directory guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NON
 " Diff
 " --------------------------
 hi DiffAdd guifg=#F8F8F8 guibg=#253B22 gui=NONE ctermfg=15 ctermbg=22 cterm=NONE
-hi DiffDelete guifg=#F922402 guibg=#420E09 gui=NONE ctermfg=47 ctermbg=52 cterm=NONE
+hi DiffDelete guifg=#00ff5f guibg=#420E09 gui=NONE ctermfg=47 ctermbg=52 cterm=NONE
 hi DiffChange guifg=#E6DB74 guibg=#420E09 gui=NONE ctermfg=185 ctermbg=52 cterm=NONE
 hi DiffText guifg=#75715E guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 
@@ -159,7 +156,7 @@ function! s:cppMonokaiAcornsFiletype()
   " --------------------------
   hi cppSTLnamespace guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi cppSTLtype guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
-  hi cppModifier guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi cppModifier guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
 
 endfunction
 
@@ -167,15 +164,15 @@ function! s:javascriptMonokaiAcornsFiletype()
   " vim-javascript syntax
   " --------------------------
   hi jsStorageClass guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
-  hi jsOperator guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsOperator guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsBooleanTrue guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
   hi jsBooleanFalse guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
-  hi jsModules guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsModuleWords guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsOf guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsModules guifg=#00ff5fguibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsModuleWords guifg=#00ff5fguibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsOf guifg=#00ff5fguibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsArgsObj guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
-  hi jsImportContainer guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsExportContainer guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsImportContainer guifg=#00ff5fguibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsExportContainer guifg=#00ff5fguibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsCommentTodo guifg=#778899 guibg=NONE gui=NONE ctermfg=103 ctermbg=NONE cterm=NONE
   hi jsLineComment guifg=#5F87AF guibg=NONE gui=italic ctermfg=240 ctermbg=NONE cterm=italic
   hi jsEnvComment guifg=#5F87AF guibg=NONE gui=italic ctermfg=240 ctermbg=NONE cterm=italic
@@ -208,25 +205,25 @@ function! s:javascriptMonokaiAcornsFiletype()
   hi jsFunctionKey guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
   hi jsDecorator guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
   hi jsDecoratorFunction guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
-  hi jsStatement guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsConditional guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsRepeat guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsLabel guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsKeyword guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsStatement guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsConditional guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsRepeat guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsLabel guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsKeyword guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsClass guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi jsAsyncKeyword guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi jsGlobalObjects guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi jsGlobalNodeObjects guifg=#66D9EF guibg=NONE gui=italic ctermfg=81 ctermbg=NONE cterm=italic
   hi jsThis guifg=#66D9EF guibg=NONE gui=italic ctermfg=81 ctermbg=NONE cterm=italic
-  hi jsExceptions guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsExceptions guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsBuiltins guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi jsFutureKeys guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi jsHtmlEvents guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
-  hi jsTernaryIfOperator guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsGenerator guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsTernaryIfOperator guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsGenerator guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsFuncName guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
   hi jsFuncArgs guifg=#FD971F guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
-  hi jsFuncArgRest guifg=#F922402 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
+  hi jsFuncArgRest guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
   hi jsArrowFunction guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
   hi jsFuncCall guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
 
