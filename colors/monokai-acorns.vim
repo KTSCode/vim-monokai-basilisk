@@ -10,7 +10,7 @@ endif
 
 let colors_name="monokai-acorns"
 
-" Below are the colours used for this colourscheme with their fullname
+" Below are the colors used for this colorscheme with their fullname
 "
 " Grey35           GUI: #585858, Term:  240
 " Bakers Chocolate GUI: #420E09, Term:  52
@@ -99,7 +99,7 @@ hi DiffText guifg=#75715E guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 hi Folded guifg=#778899 guibg=#211F1C gui=NONE ctermfg=103 ctermbg=00 cterm=NONE
 hi FoldColumn guifg=NONE guibg=#211F1C gui=NONE ctermfg=NONE ctermbg=00 cterm=NONE
 
-" Cursor colours
+" Cursor colors
 " --------------------------
 hi ColorColumn guifg=NONE guibg=#383A3E gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 hi CursorColumn guifg=NONE guibg=#383A3E gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
