@@ -8,7 +8,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name="monokai-basilisk"
+let colors_name="monokai-acorns"
 
 " Below are the colours used for this colourscheme with their fullname
 "
