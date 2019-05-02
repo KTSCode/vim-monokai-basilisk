@@ -1,4 +1,4 @@
-# vim-monokai-phoenix
+# vim-monokai-acorns
 
 A  monokai theme for Vim, based on [Monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix)
 

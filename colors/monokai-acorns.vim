@@ -154,7 +154,7 @@ hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Todo guifg=#F8F8F2 guibg=#111111 gui=bold ctermfg=15 ctermbg=233 cterm=bold
 hi Error guifg=#F8F8F2 guibg=#960020 gui=NONE ctermfg=15 ctermbg=88 cterm=NONE
 
-function! s:cppMonokaiPhoenixFiletype()
+function! s:cppMonokaiAcornsFiletype()
   " vim-cpp-enhanced-highlight syntax
   " --------------------------
   hi cppSTLnamespace guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
@@ -163,7 +163,7 @@ function! s:cppMonokaiPhoenixFiletype()
 
 endfunction
 
-function! s:javascriptMonokaiPhoenixFiletype()
+function! s:javascriptMonokaiAcornsFiletype()
   " vim-javascript syntax
   " --------------------------
   hi jsStorageClass guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
@@ -242,7 +242,7 @@ function! s:javascriptMonokaiPhoenixFiletype()
 
 endfunction
 
-function! s:jsonMonokaiPhoenixFiletype()
+function! s:jsonMonokaiAcornsFiletype()
   " JSON Syntax
   " --------------------------
   hi jsonNull guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
@@ -252,7 +252,7 @@ function! s:jsonMonokaiPhoenixFiletype()
 
 endfunction
 
-function! s:pursMonokaiPhoenixFiletype()
+function! s:pursMonokaiAcornsFiletype()
   " Purescript Syntax
   " --------------------------
   hi purescriptImportKeyword guifg=#F92782 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
@@ -267,10 +267,10 @@ function! s:pursMonokaiPhoenixFiletype()
 
 endfunction
 
-augroup MONOKAI_PHOENIX_FILETYPE_LOADER
+augroup MONOKAI_ACORNS_FILETYPE_LOADER
   au!
-  au Filetype purs call <SID>pursMonokaiPhoenixFiletype()
-  au Filetype cpp call <SID>cppMonokaiPhoenixFiletype()
-  au Filetype json call <SID>jsonMonokaiPhoenixFiletype()
-  au Filetype javascript call <SID>javascriptMonokaiPhoenixFiletype()
+  au Filetype purs call <SID>pursMonokaiAcornsFiletype()
+  au Filetype cpp call <SID>cppMonokaiAcornsFiletype()
+  au Filetype json call <SID>jsonMonokaiAcornsFiletype()
+  au Filetype javascript call <SID>javascriptMonokaiAcornsFiletype()
 augroup END
