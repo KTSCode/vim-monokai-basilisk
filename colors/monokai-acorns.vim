@@ -1,5 +1,5 @@
 " Maintainer: Kyle San Clemente <kylesanclemente@gmail.com>
-" Repository: http://github.com/ktscode
+" Repository: https://github.com/KTSCode/vim-monokai-acorns
 "
 set background=dark
 hi clear
