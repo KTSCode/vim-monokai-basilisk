@@ -45,7 +45,7 @@ let colors_name="monokai-acorns"
 " Popup Menu
 " --------------------------
 hi Pmenu guifg=#F8F8F8 guibg=#223344 gui=NONE ctermfg=15 ctermbg=23 cterm=NONE
-hi PmenuSet guifg=#66D9EF guibg=#111111 gui=NONE ctermfg=81 ctermbg=233 cterm=NONE
+hi PmenuSet guifg=#66D9EF guibg=#111111 gui=NONE ctermfg=81 ctermbg=00 cterm=NONE
 hi PmenuSBar guifg=#66D9EF guibg=#334455 gui=NONE ctermfg=81 ctermbg=59 cterm=NONE
 hi PmenuSel guifg=#66D9EF guibg=#334455 gui=NONE ctermfg=81 ctermbg=59 cterm=NONE
 hi PmenuThumb guifg=#778899 guibg=#778899 gui=NONE ctermfg=103 ctermbg=103 cterm=NONE
@@ -53,7 +53,7 @@ hi PmenuThumb guifg=#778899 guibg=#778899 gui=NONE ctermfg=103 ctermbg=103 cterm
 " Editor
 " --------------------------
 hi Normal guifg=#F8F8F2 guibg=#111111 gui=NONE ctermfg=15 ctermbg=00 cterm=NONE
-hi Conceal guifg=#66D9EF guibg=#111111 gui=NONE ctermfg=81 ctermbg=233 cterm=NONE
+hi Conceal guifg=#66D9EF guibg=#111111 gui=NONE ctermfg=81 ctermbg=00 cterm=NONE
 hi NonText guifg=#49483E guibg=NONE gui=NONE ctermfg=59 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#66D9EF guibg=#111111 gui=NONE ctermfg=81 ctermbg=00 cterm=NONE
 hi StatusLineNC guifg=#778899 guibg=#111111 gui=NONE ctermfg=103 ctermbg=00 cterm=NONE
@@ -77,9 +77,9 @@ hi SpellLocal guifg=#66D9EF guibg=NONE gui=undercurl ctermfg=81 ctermbg=NONE cte
 
 " Tabline
 " --------------------------
-hi TabLine guifg=#8F908A guibg=#111111 gui=NONE ctermfg=102 ctermbg=233 cterm=NONE
+hi TabLine guifg=#8F908A guibg=#111111 gui=NONE ctermfg=102 ctermbg=00 cterm=NONE
 hi TabLineSel guifg=#F8F8F2 guibg=#334455 gui=NONE ctermfg=15 ctermbg=59 cterm=NONE
-hi TabLineFill guifg=#111111 guibg=#111111 gui=NONE ctermfg=233 ctermbg=233 cterm=NONE
+hi TabLineFill guifg=#111111 guibg=#111111 gui=NONE ctermfg=233 ctermbg=00 cterm=NONE
 
 " Misc
 " --------------------------
@@ -148,7 +148,7 @@ hi SpecialComment guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cter
 hi Tag guifg=#F92782 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
 hi Underlined guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi Todo guifg=#F8F8F2 guibg=#111111 gui=bold ctermfg=15 ctermbg=233 cterm=bold
+hi Todo guifg=#F8F8F2 guibg=#111111 gui=bold ctermfg=15 ctermbg=00 cterm=bold
 hi Error guifg=#F8F8F2 guibg=#960020 gui=NONE ctermfg=15 ctermbg=88 cterm=NONE
 
 function! s:cppMonokaiAcornsFiletype()
