@@ -39,7 +39,7 @@ let colors_name="monokai-acorns"
 " Vulcan           GUI: #383A3E, Term: 236
 " White            GUI: #F8F8F2, Term:  15
 " White Smoke      GUI: #F8F8F8, Term:  15
-" Wild Rice        GUI: #E6DB74, Term: 185
+" Darkish Green    GUI: #00D700, Term:  40
 " Witch Haze       GUI: #FFE972, Term: 221
 
 " Popup Menu
@@ -64,9 +64,9 @@ hi SignColumn guifg=NONE guibg=#211F1C gui=NONE ctermfg=NONE ctermbg=00 cterm=NO
 
 " Messages
 " --------------------------
-hi Question guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-hi ModeMsg guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-hi MoreMsg guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
+hi Question guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+hi ModeMsg guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+hi MoreMsg guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
 hi ErrorMsg guifg=#111111 guibg=#00ff5f gui=NONE ctermfg=233 ctermbg=47 cterm=NONE
 hi WarningMsg guifg=#00ff5f guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
 
@@ -84,14 +84,14 @@ hi TabLineFill guifg=#111111 guibg=#111111 gui=NONE ctermfg=233 ctermbg=00 cterm
 " Misc
 " --------------------------
 hi SpecialKey guifg=#49483E guibg=NONE gui=NONE ctermfg=59 ctermbg=NONE cterm=NONE
-hi Title guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
+hi Title guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
 hi Directory guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 
 " Diff
 " --------------------------
 hi DiffAdd guifg=#F8F8F8 guibg=#253B22 gui=NONE ctermfg=15 ctermbg=22 cterm=NONE
 hi DiffDelete guifg=#00ff5f guibg=#420E09 gui=NONE ctermfg=47 ctermbg=52 cterm=NONE
-hi DiffChange guifg=#E6DB74 guibg=#420E09 gui=NONE ctermfg=185 ctermbg=52 cterm=NONE
+hi DiffChange guifg=#E6DB74 guibg=#420E09 gui=NONE ctermfg=40 ctermbg=52 cterm=NONE
 hi DiffText guifg=#75715E guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 
 " Folding
@@ -101,12 +101,13 @@ hi FoldColumn guifg=NONE guibg=#211F1C gui=NONE ctermfg=NONE ctermbg=00 cterm=NO
 
 " Cursor colors
 " --------------------------
-hi ColorColumn guifg=NONE guibg=#383A3E gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
+hi ColorColumn guifg=NONE guibg=#00ff5f gui=NONE ctermfg=NONE ctermbg=47 cterm=NONE
 hi CursorColumn guifg=NONE guibg=#383A3E gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 hi CursorLine guifg=NONE guibg=#383A3E gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 hi Cursor guifg=#111111 guibg=#F8F8F2 gui=NONE ctermfg=233 ctermbg=15 cterm=NONE
 hi Visual guifg=NONE guibg=#49483E gui=NONE ctermfg=NONE ctermbg=59 cterm=NONE
-hi MatchParen guifg=#111111 guibg=#E6DB74 gui=NONE ctermfg=233 ctermbg=185 cterm=NONE
+hi MatchParen guibg=#E6DB74 gui=underline ctermbg=black ctermfg=47 cterm=underline term=underline
+
 
 if has("nvim")
 
@@ -123,8 +124,8 @@ hi Constant guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NON
 hi Number guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Float guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Boolean guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
-hi Character guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-hi String guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
+hi Character guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+hi String guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
 hi Type guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi Structure guifg=#F92782 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
 hi StorageClass guifg=#F92782 guibg=NONE gui=NONE ctermfg=47 ctermbg=NONE cterm=NONE
@@ -184,24 +185,24 @@ function! s:javascriptMonokaiAcornsFiletype()
   hi jsDocTypeNoParam guifg=#778899 guibg=NONE gui=NONE ctermfg=103 ctermbg=NONE cterm=NONE
   hi jsDocParam guifg=#778899 guibg=NONE gui=NONE ctermfg=103 ctermbg=NONE cterm=NONE
   hi jsDocSeeTag guifg=#778899 guibg=NONE gui=NONE ctermfg=103 ctermbg=NONE cterm=NONE
-  hi jsTemplateVar guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsStringD guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsStringS guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsTemplateString guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
+  hi jsTemplateVar guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsStringD guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsStringS guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsTemplateString guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
   hi jsTemplateBraces guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
-  hi jsTaggedTemplate guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpCharClass guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpBoundary guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpBackRef guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpQuantifier guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpOr guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpMod guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpSpecial guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpGroup guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-  hi jsRegexpString guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
+  hi jsTaggedTemplate guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpCharClass guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpBoundary guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpBackRef guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpQuantifier guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpOr guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpMod guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpSpecial guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpGroup guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
+  hi jsRegexpString guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
   hi jsNumber guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
   hi jsFloat guifg=#AE81FF guibg=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
-  hi jsObjectKey guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
+  hi jsObjectKey guifg=#E6DB74 guibg=NONE gui=NONE ctermfg=40 ctermbg=NONE cterm=NONE
   hi jsFunctionKey guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
   hi jsDecorator guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
   hi jsDecoratorFunction guifg=#A6E22E guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NONE
