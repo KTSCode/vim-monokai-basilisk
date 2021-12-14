@@ -1,13 +1,13 @@
-# vim-monokai-acorns
+# vim-monokai-basilisk
 
-A  monokai theme for Vim, based on [Monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix)
+A  monokai theme for Vim and Neovim, based on [Monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix)
 
 ## Installation
 
 Using Plug, you can do the following:
 
 ```vim
-Plug 'ktscode/vim-monokai-acorns'
+Plug 'KTSCode/vim-monokai-basilisk'
 ```
 
 Then do :PlugInstall and you're good to go
