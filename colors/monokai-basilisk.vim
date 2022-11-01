@@ -12,26 +12,25 @@ let colors_name="monokai-basilisk"
 
 " Below are the colors used for this colorscheme with their fullname
 "
-" Black            GUI: #000000, Term: 00
-" Black Gray       GUI: #111111, Term: 233
-" Blue             GUI: #00afff, Term: 39
-" Carmine          GUI: #960020, Term: 88
-" Eternity         GUI: #2F312B, Term: 22
-" Flint            GUI: #75715E, Term: 95
-" Green            GUI: #00D700, Term: 40
-" Grey35           GUI: #585858, Term: 240
-" Heavy Metal      GUI: #49483E, Term: 59
-" Jumbo            GUI: #8F908A, Term: 102
-" Light Slate Blue GUI: #AE81FF, Term: 141
-" Light Slate Grey GUI: #778899, Term: 103
-" Midnight         GUI: #223344, Term: 23
-" Seal Brown       GUI: #3C1518, Term: 52
-" SlateBlue1       GUI: #875fff, Term: 99
-" SpringGreen2     GUI: #00ff5f, Term: 47
-" Turquoise Blue   GUI: #66D9EF, Term: 81
-" Vulcan           GUI: #383A3E, Term: 236
-" White Smoke      GUI: #F8F8F8, Term: 15
-" Witch Haze       GUI: #FFE972, Term: 221
+"Base1 Term:       000  GUI: #000000,
+"White Term:       015  GUI: #F8F8F8,
+"Base3 Term:       022  GUI: #2F312B,
+"DiffText Term:    023  GUI: #223344,
+"Aqua Term:        039  GUI: #00afff,
+"Green Term:       040  GUI: #00D700,
+"Base4 Term:       052  GUI: #3C1518,
+"Base5 Term:       059  GUI: #49483E,
+"Blue Term:        081  GUI: #66D9EF,
+"Red Term:         088  GUI: #960020,
+"DiffRemove Term:  095  GUI: #75715E,
+"LightPurple Term: 099  GUI: #875fff,
+"Grey Term:        102  GUI: #8F908A,
+"Base6 Term:       103  GUI: #778899,
+"Purple Term:      141  GUI: #AE81FF,
+"Yellow Term:      221  GUI: #FFE972,
+"Base2 Term:       233  GUI: #111111,
+"Brown Term:       236  GUI: #383A3E,
+"Comment Term:     240  GUI: #585858,
 
 " Editor
 " --------------------------
@@ -52,6 +51,15 @@ hi PmenuSet guifg=#66D9EF guibg=#000000 gui=NONE ctermfg=81 ctermbg=00 cterm=NON
 hi PmenuSBar guifg=#66D9EF guibg=#49483E gui=NONE ctermfg=81 ctermbg=59 cterm=NONE
 hi PmenuSel guifg=#66D9EF guibg=#49483E gui=NONE ctermfg=81 ctermbg=59 cterm=NONE
 hi PmenuThumb guifg=#778899 guibg=#778899 gui=NONE ctermfg=103 ctermbg=103 cterm=NONE
+
+" Neovim Popup Menu
+" --------------------------
+hi NormalFloat guifg=#F8F8F8 guibg=#223344 gui=NONE ctermfg=15 ctermbg=23 cterm=NONE
+
+" Coc Popup Menu
+" --------------------------
+hi CocFloating guifg=#75715E guibg=#223344 gui=NONE ctermfg=102 ctermbg=233 cterm=NONE
+hi CocMenuSel guifg=#00D700 guibg=#000000 gui=NONE ctermfg=40 ctermbg=00 cterm=NONE
 
 " Messages
 " --------------------------
