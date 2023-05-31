@@ -95,7 +95,7 @@ hi DiffText guifg=#75715E guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 
 " Folding
 " --------------------------
-hi Folded guifg=#778899 guibg=#000000 gui=NONE ctermfg=103 ctermbg=00 cterm=NONE
+hi Folded guifg=#585858 guibg=#000000 gui=NONE ctermfg=240 ctermbg=00 cterm=NONE
 hi FoldColumn guifg=NONE guibg=#000000 gui=NONE ctermfg=NONE ctermbg=00 cterm=NONE
 
 " Cursor colors
