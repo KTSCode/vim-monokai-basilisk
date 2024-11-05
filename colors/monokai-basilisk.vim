@@ -150,3 +150,23 @@ hi Underlined guifg=#875fff guibg=NONE gui=NONE ctermfg=99 ctermbg=NONE cterm=NO
 hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Todo guifg=#F8F8F2 guibg=#000000 gui=bold ctermfg=15 ctermbg=00 cterm=bold
 hi Error guifg=#F8F8F2 guibg=#960020 gui=NONE ctermfg=15 ctermbg=88 cterm=NONE
+
+" RenderMarkdown Plugin
+" --------------------------
+"  Header Foreground
+hi RenderMarkdownH1 guifg=#00D700 gui=NONE cterm=NONE
+hi RenderMarkdownH2 guifg=#66D9EF gui=NONE cterm=NONE
+hi RenderMarkdownH3 guifg=#00afff gui=NONE cterm=NONE
+hi RenderMarkdownH4 guifg=#875fff gui=NONE cterm=NONE
+hi RenderMarkdownH5 guifg=#8F908A gui=NONE cterm=NONE
+hi RenderMarkdownH6 guifg=#F8F8F8 gui=NONE cterm=NONE
+hi RenderMarkdownH7 guifg=#99FF99 gui=NONE cterm=NONE
+
+"  Header background
+hi RenderMarkdownH1Bg guibg=#003300 gui=NONE cterm=NONE
+hi RenderMarkdownH2Bg guibg=#001133 gui=NONE cterm=NONE
+hi RenderMarkdownH3Bg guibg=#000033 gui=NONE cterm=NONE
+hi RenderMarkdownH4Bg guibg=#110033 gui=NONE cterm=NONE
+hi RenderMarkdownH5Bg guibg=#222222 gui=NONE cterm=NONE
+hi RenderMarkdownH6Bg guibg=#111111 gui=NONE cterm=NONE
+hi RenderMarkdownH7Bg guibg=#005500 gui=NONE cterm=NONE
