@@ -154,7 +154,8 @@ hi Error guifg=#F8F8F2 guibg=#960020 gui=NONE ctermfg=15 ctermbg=88 cterm=NONE
 " RenderMarkdown Plugin
 " --------------------------
 "  Code Block
-hi RenderMarkdownCode guibg=#333333 gui=NONE cterm=NONE
+hi RenderMarkdownCode guibg=#111111 gui=NONE cterm=NONE
+hi RenderMarkdownCodeInline guibg=#111111 gui=NONE cterm=NONE
 
 "  Header Foreground
 hi RenderMarkdownH1 guifg=#00D700 gui=NONE cterm=NONE
