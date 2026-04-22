@@ -14,7 +14,7 @@ let colors_name="monokai-basilisk"
 "
 "Base1 Term:       000  GUI: #000000,
 "White Term:       015  GUI: #F8F8F8,
-"Base3 Term:       022  GUI: #2F312B,
+"Base3 Term:       022  GUI: #0D2812,
 "DiffText Term:    023  GUI: #223344,
 "Aqua Term:        039  GUI: #00afff,
 "Green Term:       040  GUI: #00D700,
@@ -88,7 +88,7 @@ hi Directory guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NON
 
 " Diff
 " --------------------------
-hi DiffAdd guifg=NONE guibg=#2F312B gui=NONE ctermfg=NONE ctermbg=22 cterm=NONE
+hi DiffAdd guifg=NONE guibg=#0D2812 gui=NONE ctermfg=NONE ctermbg=22 cterm=NONE
 hi DiffDelete guifg=#00afff guibg=#3C1518 gui=NONE ctermfg=39 ctermbg=52 cterm=NONE
 hi DiffChange guifg=NONE guibg=#3C1518 gui=NONE ctermfg=NONE ctermbg=52 cterm=NONE
 hi DiffText guifg=NONE guibg=#49483E gui=NONE ctermfg=NONE ctermbg=59 cterm=NONE
