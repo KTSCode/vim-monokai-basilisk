@@ -88,10 +88,10 @@ hi Directory guifg=#66D9EF guibg=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NON
 
 " Diff
 " --------------------------
-hi DiffAdd guifg=#F8F8F8 guibg=#2F312B gui=NONE ctermfg=15 ctermbg=22 cterm=NONE
+hi DiffAdd guifg=NONE guibg=#2F312B gui=NONE ctermfg=NONE ctermbg=22 cterm=NONE
 hi DiffDelete guifg=#00afff guibg=#3C1518 gui=NONE ctermfg=39 ctermbg=52 cterm=NONE
-hi DiffChange guifg=#00D700 guibg=#3C1518 gui=NONE ctermfg=40 ctermbg=52 cterm=NONE
-hi DiffText guifg=#75715E guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
+hi DiffChange guifg=NONE guibg=#3C1518 gui=NONE ctermfg=NONE ctermbg=52 cterm=NONE
+hi DiffText guifg=NONE guibg=#49483E gui=NONE ctermfg=NONE ctermbg=59 cterm=NONE
 
 " Folding
 " --------------------------
