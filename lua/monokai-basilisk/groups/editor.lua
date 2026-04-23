@@ -74,10 +74,10 @@ function M.get(c, opts)
     Directory    = { fg = c.blue.gui, ctermfg = c.blue.cterm },
 
     -- Diff
-    DiffAdd      = { fg = c.white.gui, bg = c.base3.gui, ctermfg = c.white.cterm, ctermbg = c.base3.cterm },
+    DiffAdd      = { bg = c.base3.gui, ctermbg = c.base3.cterm },
     DiffDelete   = { fg = c.aqua.gui, bg = c.base4.gui, ctermfg = c.aqua.cterm, ctermbg = c.base4.cterm },
-    DiffChange   = { fg = c.green.gui, bg = c.base4.gui, ctermfg = c.green.cterm, ctermbg = c.base4.cterm },
-    DiffText     = { fg = c.diff_remove.gui, ctermfg = c.diff_remove.cterm },
+    DiffChange   = { bg = c.base4.gui, ctermbg = c.base4.cterm },
+    DiffText     = { bg = c.base5.gui, ctermbg = c.base5.cterm },
 
     -- Folding
     Folded       = { fg = c.comment.gui, bg = c.base1.gui, ctermfg = c.comment.cterm, ctermbg = c.base1.cterm },

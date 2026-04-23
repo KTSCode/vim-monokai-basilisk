@@ -35,7 +35,7 @@ M.colors = {
   none         = { gui = "NONE",    cterm = "NONE" },
   base1        = { gui = "#000000", cterm = 0 },   -- Background
   base2        = { gui = "#111111", cterm = 233 },
-  base3        = { gui = "#2F312B", cterm = 22 },
+  base3        = { gui = "#0D2812", cterm = 22 },
   base4        = { gui = "#3C1518", cterm = 52 },
   base5        = { gui = "#49483E", cterm = 59 },
   base6        = { gui = "#778899", cterm = 103 },
